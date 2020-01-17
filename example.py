@@ -17,5 +17,5 @@ postdata="""{
 	"followPreRedirections":false
 }"""
 
-res1 = requests.post("http://127.0.0.1:9000", headers={'Content-Type':"application/x-www-form-urlencoded"},data=postdata)
+res1 = requests.post("http://127.0.0.1:9000", headers={'Content-Type':"application/json"},data=postdata)
 print res1.json()

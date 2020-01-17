@@ -20,7 +20,7 @@ phantomjs --ssl-protocol=any --ignore-ssl-errors=true phantomjs_spider.js 9000
 You can use Burp Suite to send HTTP data to detect the existing links on the current page. It can detect HTML link form and Ajax.
 
 For examples
-```
+```html
 {
 	"url":"http://testphp.vulnweb.com/AJAX/index.php",
 	"data":"",
@@ -34,10 +34,10 @@ For examples
 	"request_timeout":20,
 	"followPreRedirections":false
 }
-```
+'''
 
 The results are as follows
-```
+```html
 {
   "orig_url": "http://testphp.vulnweb.com/AJAX/index.php",
   "status_code": 200,
@@ -111,4 +111,12 @@ The results are as follows
     }
   ]
 }
+'''
+
+## Debugging
+
+`--debug=true` is very powerful and can be added as a phantomjs parameter.
+
+```
+phantomjs --debug=true ... phantomjs_spider.js 9000
 ```

@@ -119,4 +119,10 @@ The results are as follows
 
 ```
 phantomjs --debug=true ... phantomjs_spider.js 9000
+
+
+```
+## How to test the api
+```
+python example.py
 ```
